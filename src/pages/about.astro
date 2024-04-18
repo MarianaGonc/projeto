@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 const pageTitle = "Sobre Mim só uma vez";
 ---
 <html lang="pt-BR">
@@ -16,12 +17,16 @@ const pageTitle = "Sobre Mim só uma vez";
       </style>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <h1>{pageTitle}</h1>
     <h2>... e meu novo site Astro!</h2>
 
     <p>Estou resolvendo o tutorial introdutório do Astro. Esta é a segunda página no meu website, e é a primeira que eu mesmo construí!</p>
 
     <p>Este site será atualizado enquanto eu completo mais desse tutorial, então continue verificando e veja como minha jornada está indo!</p>
+    <Footer />
+    <script>
+          import "../scripts/menu.js";
+      </script>
   </body>
 </html>
