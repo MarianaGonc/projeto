@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-const pageTitle = "Sobre Mim só uma vez";
+const pageTitle = "About";
 ---
 <html lang="pt-BR">
   <head>
@@ -18,12 +18,58 @@ const pageTitle = "Sobre Mim só uma vez";
   </head>
   <body>
     <Header />
-    <h1>{pageTitle}</h1>
-    <h2>... e meu novo site Astro!</h2>
 
-    <p>Estou resolvendo o tutorial introdutório do Astro. Esta é a segunda página no meu website, e é a primeira que eu mesmo construí!</p>
-
-    <p>Este site será atualizado enquanto eu completo mais desse tutorial, então continue verificando e veja como minha jornada está indo!</p>
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="title-section">
+            <h2>About me</h>
+          </div>
+          <div class="intro-section">
+            <p>I am a Digital Product Designer with a background in Social Sciences. For the past 7 years, I have been working in project management and ethnographic research. Recently, I have made a career change and I am currently completing my postgraduate studies in Digital Experience Design at the University of Lisbon.</p>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="container">
+          <h2>My Main Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">
+              <div class="skill-header">
+                <i class="fa-solid fa-book"></i>
+                <h3>Research</h3>
+              </div>
+              <p>I apply research techniques to understand the users and the business needs and bring better solutions.</p>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Project Management</h3>
+              </div>
+              <p>My experience with project management has given me skills in time management, planning, and adaptability to diverse scenarios.</p>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <i class="fa-solid fa-users-viewfinder"></i>
+                <h3>User-Centered</h3>
+              </div>
+              <p>I use decision-making techniques to focus design solutions on the real needs of users and the business.</p>
+            </div>
+            <div class="skill">
+              <div class="skill-header">
+                <i class="fa-solid fa-people-carry-box"></i>
+                <h3>Collaboration</h3>
+              </div>
+              <p>I can work in diverse teams with various needs to create the best product design solutions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    
+    
+    
     <Footer />
     <script>
           import "../scripts/menu.js";
