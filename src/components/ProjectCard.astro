@@ -1,0 +1,43 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
+const { title, description, image, link } = Astro.props;
+---
+<article class="project-card">
+  <a href={link}>
+    <img src={image} alt={title} />
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </a>
+</article>
+
+<style>
+    .project-card {
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .project-card img {
+      width: 100%;
+      height: auto;
+    }
+    .project-card h3 {
+      color: #fdfdfd;
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .project-card p {
+      margin: 0;
+      font-size: 1rem;
+      color: #fdfdfd;
+    }
+  </style>

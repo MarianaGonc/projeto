@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectList from '../components/ProjectList.astro';
+const pageTitle = "";
+---
+<BaseLayout pageTitle={pageTitle}>
+
+  <main>
+    <section id="projects">
+      <div class="container">
+        <div class="title-section">
+          <h1>Projects</h1>
+        </div>
+        <ProjectList />
+      </div>
+    </section>
+  </main>
+
+</BaseLayout>

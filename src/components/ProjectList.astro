@@ -1,0 +1,43 @@
+---
+import ProjectCard from './ProjectCard.astro';
+
+const projects = [
+  {
+    title: "Alumni Hub",
+    description: "Design of Alumni Page for Fbaul",
+    image: "/images/project-1.jpg",
+    link: "/images/project-1.jpg"
+  },
+  {
+    title: "Sky Case",
+    description: "Project for D&DA awards",
+    image: "/images/project-2.jpg",
+    link: "/images/project-2.jpg"
+  },
+  {
+    title: "New Feature for Spotify",
+    description: "Design of a new feature for Spotify",
+    image: "/images/project-3.jpg",
+    link: "/images/project-3.jpg"
+  }
+];
+---
+<section class="projects-grid">
+  {projects.map(project => (
+    <ProjectCard
+      title={project.title}
+      description={project.description}
+      image={project.image}
+      link={project.link}
+    />
+  ))}
+</section>
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+</style>

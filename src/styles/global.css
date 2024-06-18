@@ -1,18 +1,15 @@
-html {
-  background-color: #f1f5f9;
-  font-family: sans-serif;
-}
-
-body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 120ch;
-  padding: 1rem;
-  line-height: 1.5;
-}
-
-* {
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #212121;
+  color: #f0f0f0; 
+  font-family: 'Roboto', sans-serif; 
   box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 h1 {
@@ -33,38 +30,41 @@ h1 {
   margin-bottom: 10px;
 }
 .nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  display: none;
-  margin: 0;
+  background-color: #191919;
+  height: 70px;
+  position: fixed;
+  width: 94%; 
+  top: 0;
+  left: 3%;
+  right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
 .nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
   text-decoration: none;
-  font-size: 1.2rem;
+  color: #f0f0f0; 
+  padding: 15px 20px;
 
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  text: rgb(222, 221, 221);
+  color: whitesmoke;
+  text-decoration: underline;
 }
 
-.expanded {
+//.expanded {
   display: unset;
 }
 
-@media screen and (min-width: 636px) {
   .nav-links {
     margin-left: 5em;
     display: block;
     position: static;
     width: auto;
-    background: none;
   }
 
   .nav-links a {
@@ -75,16 +75,20 @@ h1 {
     display: none;
   }
 
-// estilo das páginas//
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* estilo das páginas */
+
+body {
+  background-color: #212121;
+  color: #f0f0f0; 
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  width: 100%;
   }
   
-  header {
-    background-color: #333;
+ header {
     color: #fff;
-    padding: 1em 0;
+    padding: 0;
     text-align: center;
   }
   
@@ -107,96 +111,107 @@ h1 {
   }
   
   nav ul li {
-    margin: 0 1em;
+    margin: 0;
   }
   
   nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #f4f4f4;
+    text-decoration: underline;
   }
   
   main {
-    padding: 2em;
-    background-color: #fff;
+    padding-top: 90px; /* Espaço para o menu fixo */
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+
+
+/* Estilos para a seção About */
+
+#about {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20%; 
   }
+
+#about .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-section {
+  text-align: center;
+}
+
+
+#skills {
+  padding: 20px 0;
+  background-color: #212121;
+}
+
+#skills .container {
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   
-  .title-section {
-    text-align: center;
-    margin-bottom: 20px;
+    }
+
+.skill {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #212121;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-header i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.skill-header h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav {
+      height: auto;
   }
-  
-  .intro-section {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .image-section {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .image-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  #skills {
-    //background-color: #e9ecef;
-    padding: 40px 0;
-  }
-  
-  #skills .container {
-    text-align: center;
-  }
-  
-  #skills h2 {
-    margin-bottom: 40px;
-  }
-  
   .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+      grid-template-columns: 1fr; /* Coluna única em telas menores */
   }
-  
-  .skill {
-    flex: 0 0 45%; /* Two columns */
-    margin-bottom: 20px;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .skill-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .skill-header i {
-    font-size: 30px;
-    margin-right: 10px;
-    color: #333;
-  }
-  
-  .skill-header h3 {
-    margin: 0;
-    font-size: 1.2em;
-  }
-  
-  .skill p {
-    margin: 0;
-    font-size: 1em;
-    color: #666;
-  }
+}
   
   footer {
     //background-color: #333;
@@ -205,5 +220,94 @@ h1 {
     padding: 1em 0;
   }
  
+    
+  .title-section h2 {
+    margin: 1.5rem 0;
+  }
+  
+  .intro-section p {
+    margin: 2rem 0;
+  }
+  
+/* Estilos para o botão */
+.btn-primary {
+  background-color: #7c5ef5; 
+  color: #ffffff; 
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5rem;
+  display: inline-block;
+  text-decoration: none;
+}
 
+.btn-primary:hover {
+  background-color: #bab3d4; 
+
+}
+
+/* Estilos para a seção Projects */
+#projects .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #fcfbfb;
+}
+.project-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+.project-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
 }
