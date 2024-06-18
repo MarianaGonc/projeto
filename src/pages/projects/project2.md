@@ -1,10 +1,14 @@
 ---
-title: "Sky Case",
-description: "Project for D&DA awards",
-image: "/images/project-2.jpg",
-link: "/images/project-2.jpg"
+layout: "../../layouts/BaseLayout.astro"
+title: "Project 1"
+description: "This is the first project case study."
+image: "/img/project-1.jpg"
 ---
 
-# Project 2
+# Project 1
 
-Content for Project 2 case study. isso tbm nçao
+Detailed content for Project 1 case study. Describe your project here in detail.
+
+![Image 1](/img/project-1-detail-1.jpg)
+![Image 2](/img/project-1-detail-2.jpg)
+![Image 3](/img/project-1-detail-3.jpg)

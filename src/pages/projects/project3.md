@@ -1,12 +1,14 @@
 ---
 layout: "../../layouts/BaseLayout.astro"
-title: "New Feature for Spotify",
-description: "Design of a new feature for Spotify",
-image: "/images/project-3.jpg",
-link: "/images/project-3.jpg"
+title: "Project 1"
+description: "This is the first project case study."
+image: "/img/project-1.jpg"
 ---
 
-# Project 3
+# Project 1
 
-Content for Project 3 case study.
-mkmklmlkm isso nem funciona
+Detailed content for Project 1 case study. Describe your project here in detail.
+
+![Image 1](/img/project-1-detail-1.jpg)
+![Image 2](/img/project-1-detail-2.jpg)
+![Image 3](/img/project-1-detail-3.jpg)
