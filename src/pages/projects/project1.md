@@ -6,4 +6,4 @@ image: "/images/project-1.jpg",
 link: "/images/project-1.jpg"
 ---
 
-Bem-vindo ao meu _novo blog_ sobre aprendendo Astro! Aqui, eu irei compartilhar minha jornada de aprendizado enquanto eu construo um novo website.
+Bem-vindo ao meu _novo blog_ sobre aprendendo Astro! Aqui, eu irei compartilhar minha jornada de aprendizado enquanto eu construo um novo website. isso não funicona 

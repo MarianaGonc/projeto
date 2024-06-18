@@ -7,4 +7,4 @@ link: "/images/project-2.jpg"
 
 # Project 2
 
-Content for Project 2 case study.
+Content for Project 2 case study. isso tbm nçao
