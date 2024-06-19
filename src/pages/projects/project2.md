@@ -1,14 +1,20 @@
 ---
 layout: "../../layouts/BaseLayout.astro"
-title: "Project 1"
-description: "This is the first project case study."
-image: "/img/project-1.jpg"
+title: "Sky Care"
+description: "Project for D&DA awards"
+image: "/img/project-2.jpg"
 ---
 
-# Project 1
+<h1 class="projects-title">Sky Care</h1>
 
-Detailed content for Project 1 case study. Describe your project here in detail.
+<img src="/images/introproject-2.jpg" alt="Explain the challenge of the Case study" class="img-style-1" />
+<img src="/images/solutionproject-2.jpg" alt="Explain the solution of the Case study" class="img-style-1" />
 
-![Image 1](/img/project-1-detail-1.jpg)
-![Image 2](/img/project-1-detail-2.jpg)
-![Image 3](/img/project-1-detail-3.jpg)
+<section id="video-link">
+  <div class="container">
+    <h2>View Our Video</h2>
+    <a href="https://drive.google.com/file/d/19eSnRJm7ETnERUOCxKxne3YDgCtjP7RO/view" class="btn-primary">Watch Video</a>
+  </div>
+  </section>
+
+

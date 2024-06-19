@@ -1,14 +1,19 @@
 ---
 layout: "../../layouts/BaseLayout.astro"
-title: "Project 1"
-description: "This is the first project case study."
-image: "/img/project-1.jpg"
+title: "New Feature for Spotify"
+description: "Design of a new feature for Spotify"
+image: "/img/project-3.jpg"
 ---
 
-# Project 1
+<h1 class="projects-title">New Feature for Spotify</h1>
 
-Detailed content for Project 1 case study. Describe your project here in detail.
+<img src="/images/introproject-3.jpg" alt="Explain the challenge of the Case study" class="img-style-1" />
+<img src="/images/solutionproject-3.jpg" alt="Explain the solution of the Case study" class="img-style-1" />
+<img src="/images/finalproject-3.jpg" alt="Show the results of the Satudy" class="img-style-1" />
 
-![Image 1](/img/project-1-detail-1.jpg)
-![Image 2](/img/project-1-detail-2.jpg)
-![Image 3](/img/project-1-detail-3.jpg)
+<section id="figma-link">
+  <div class="container">
+    <h2>View Our Design on Figma</h2>
+    <a href="https://www.figma.com/proto/8sfRY9oQKo6CmJ56CPFTJz/DXD-P3-New-Feature%3A-Spotify?page-id=36%3A2970&type=design&node-id=66-1076&viewport=-736%2C3084%2C0.37&t=GYQ68PVk0LwLxtAR-1&scaling=min-zoom&starting-point-node-id=99%3A2463" target="_blank" class="figma-button">Open Figma Project</a>
+  </div>
+</section>
