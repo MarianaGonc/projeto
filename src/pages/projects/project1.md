@@ -18,3 +18,10 @@ image: "/img/project-1.jpg"
     <a href="https://www.figma.com/proto/yMoeMZXUZZ5DTnLwgUAnVP/Projeto-Redesign-Site-FBAUL?page-id=468%3A3304&node-id=468-3658&viewport=216%2C276%2C0.04&t=mSeHSuQcUxq00uuM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=468%3A3658" target="_blank" class="figma-button">Open Figma Project</a>
   </div>
 </section>
+
+
+<ul class="project-links">
+<h2>View other Projects</h2>
+  <li><a href="/projects/project2/">Sky Care</a></li>
+  <li><a href="/projects/project3/">Spotify New Feature</a></li>
+</ul>

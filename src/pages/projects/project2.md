@@ -17,4 +17,8 @@ image: "/img/project-2.jpg"
   </div>
   </section>
 
-
+<ul class="project-links">
+<h2>View other Projects</h2>
+  <li><a href="/projects/project1/">Alumni Hub</a></li>
+  <li><a href="/projects/project3/">Spotify New Feature</a></li>
+</ul>

@@ -17,3 +17,9 @@ image: "/img/project-3.jpg"
     <a href="https://www.figma.com/proto/8sfRY9oQKo6CmJ56CPFTJz/DXD-P3-New-Feature%3A-Spotify?page-id=36%3A2970&type=design&node-id=66-1076&viewport=-736%2C3084%2C0.37&t=GYQ68PVk0LwLxtAR-1&scaling=min-zoom&starting-point-node-id=99%3A2463" target="_blank" class="figma-button">Open Figma Project</a>
   </div>
 </section>
+
+<ul class="project-links">
+<h2>View other Projects</h2>
+  <li><a href="/projects/project1/">Alumni Hub</a></li>
+  <li><a href="/projects/project2/">Sky Care</a></li>
+</ul>
